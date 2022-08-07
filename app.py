@@ -15,7 +15,7 @@ from werkzeug.security import generate_password_hash, check_password_hash
 app = Flask(__name__)
 ckeditor = CKEditor(app)
 #app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///users.db'
-app.config['SQLALCHEMY_DATABASE_URI'] = 'postgres://hbwfipklsehymi:076b45e70eee516745e6a92f78d37cc0617d1364f43e70e981a79a96a1e610c0@ec2-50-19-255-190.compute-1.amazonaws.com:5432/d7di4eq30ragt0'
+app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://hbwfipklsehymi:076b45e70eee516745e6a92f78d37cc0617d1364f43e70e981a79a96a1e610c0@ec2-50-19-255-190.compute-1.amazonaws.com:5432/d7di4eq30ragt0'
 
 app.config['SECRET_KEY'] = "my secret key"
 
